@@ -1,11 +1,5 @@
 import { API_KEY, BASE_URL } from "../config";
 
-/**
- * 
- * @param {string} city
- * @param {string} units
- * @returns {Promise<object|null>}
- */
 export const getWeatherByCity = async (city, units = "metric") => {
   try {
     const res = await fetch(
